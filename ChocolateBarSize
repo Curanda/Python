@@ -1,0 +1,7 @@
+dlugoscA = int(input("Write Anthony's chocolate length: "))
+szerA = int(input("Write Anthony's chocolate width: "))
+dlugoscS = int(input("Write Susan's chocolate length : "))
+szerS = int(input("Write Susan's chocolate width : "))
+
+rozmiarCzek = (dlugoscS*szerS)+(dlugoscA*szerA)
+print(f"Those chocolates have {rozmiarCzek} pieces in total")
