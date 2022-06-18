@@ -1,0 +1,2 @@
+rok = int(input("Write year : "))
+result = [print(f'{rok} is a leap year') if rok % 100 and rok % 400 else print(f'{rok} is not a leap year')]
