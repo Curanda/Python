@@ -1,0 +1,9 @@
+varA: int = int(input("Write variable A : "))
+varB: int = int(input("Write variable B : "))
+varC: int = int(input("Write variable C : "))
+if varA > varB and varA > varC:
+    print(f"{varA} is the biggest")
+elif varB > varA and varB > varC:
+    print(f"{varB} is the biggest")
+else:
+    print(f"{varC} is the biggest")
