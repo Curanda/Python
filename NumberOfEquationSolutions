@@ -1,0 +1,12 @@
+varA: int = int(input("Write variable A : "))
+varB: int = int(input("Write variable B : "))
+varX: int = None
+if varA == 0:
+    print("Number of solutions to A*B=X is : infinite")
+else:
+    if varB%varA == 0:
+        print("Number of solutions to A*B=X is : 1")
+    elif varB%varA != 0.5:
+        print("Number of solutions to A*B=X is : 1")
+    else: 
+        print("Number of solutions to A*B=X is : 2")
