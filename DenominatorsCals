@@ -1,0 +1,7 @@
+varA = int(input("Write variable N : "))
+for i in range(1, varA):
+    print(i) if varA % i == 0 else None
+if varA%varA == 0:
+    print(varA)
+else:
+    None
