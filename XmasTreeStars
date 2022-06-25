@@ -1,0 +1,14 @@
+varN = int(input("Declare a number : "))
+varM: int = 1
+varA = varN
+varB = varM
+
+for i in range(varN):
+    print(varN*' ', varM*'*')
+    varN = varN-1
+    varM = varM+2
+
+for i in range(varA+1):
+    print(varA * ' ', varB * '*')
+    varA = varA - 1
+    varB = varB + 2
