@@ -1,0 +1,10 @@
+varA = int(input("Declare an amount of elements : "))
+varM = int(input("Declare the power of elements : "))
+varB = (float(input("Enter first element : "))**varM)
+
+for i in range(varA-1):
+    varC = float(input("Enter next element : "))
+    varB = varB + (varC**varM)
+
+decimal = "{:.3f}".format(varB)
+print(f'Sum of those elements to the power of {varM} is {decimal}')
