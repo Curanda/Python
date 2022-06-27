@@ -1,0 +1,13 @@
+days = 0
+
+
+def kids_collecting_strawberries():
+    berries = 0
+    for day in range(days):
+        berries += int(input("How many strawberries this kid has collected today : "))
+    return print("This kid has collected", berries, "strawberries so far.")
+
+
+for kid in range(int(input("Kids are collecting strawberries. Declare how many kids are there : "))):
+    days = int(input("Declare for how many days this kid has been collecting strawberries : "))
+    kids_collecting_strawberries()
