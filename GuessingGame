@@ -1,0 +1,40 @@
+import random
+
+
+def random_number_func():
+    list_num = list(range(1, 101))
+
+    random_number = random.choice(list_num)
+
+    guessedNumber = int(input("Guess a number between 1 and 100 : "))
+
+    while guessedNumber != random_number:
+        if (guessedNumber > random_number) and (guessedNumber > (random_number + 10)):
+            print("wrong guess! Cold! Try again")
+        elif (guessedNumber > random_number) and (guessedNumber < (random_number + 10)):
+            print("Wrong guess! Warm! Try again")
+        elif (guessedNumber < random_number) and (guessedNumber > (random_number - 10)):
+            print("Wrong guess! Warm! Try again")
+        elif (guessedNumber < random_number) and (guessedNumber < (random_number - 10)):
+            print("Wrong guess! Cold! Try again")
+        else:
+            print("Correct guess! Wanna try again? (y/n)")
+            if input() == "y":
+                random_number_func()
+            else:
+                print("Bye!")
+                exit()
+        guessedNumber = int(input("Guess a number between 1 and 100 : "))
+    else:
+        print("Correct guess! Wanna try again? (y/n)")
+        if input() == "y":
+            random_number_func()
+        else:
+            print("Bye!")
+            exit()
+
+
+random_number_func()
+
+
+
