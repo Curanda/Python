@@ -1,0 +1,13 @@
+def disemvowel(string):
+    string1 = string.replace('a', '')
+    string2 = string1.replace('e', '')
+    string3 = string2.replace('i', '')
+    string4 = string3.replace('o', '')
+    string5 = string4.replace('A', '')
+    string6 = string5.replace('E', '')
+    string7 = string6.replace('I', '')
+    string8 = string7.replace('O', '')
+    return string8
+
+string = input("Write a sentence to be diemvoweled : ")
+print(disemvowel(string))
