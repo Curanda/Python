@@ -1,0 +1,5 @@
+import string
+capwords = string.capwords
+
+
+print(capwords(input("Enter a string: ")))
