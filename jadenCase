@@ -1,0 +1,9 @@
+def to_jaden_case(string):
+    listJadenCase = string.split()
+    for i in range(len(listJadenCase)):
+        listJadenCase[i] = listJadenCase[i].capitalize()
+    stringJaden = ' '.join(listJadenCase)
+    return stringJaden
+   
+
+print(to_jaden_case(input("This will make your input sentence look like it was tweeted by Jaden Smith. Bring it on : ")))
