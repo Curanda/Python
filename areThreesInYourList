@@ -1,0 +1,25 @@
+
+listSize = int(input('Declare size of a list : '))
+lista = []
+for i in range(listSize):
+    element = int((input('Enter a number : ')))
+    lista.append(element)
+
+print(lista)
+
+
+def threes_in_a_list(lista):
+    for number in range(len(lista)):
+        while number != 3:
+            number += 1
+            if (lista[number] == 3) and ((lista[number+1]) == 3):
+                return True
+            elif (lista[len(lista)-1] == 3) and ((lista[(len(lista))-2]) == 3):
+                return True
+            elif lista[(len(lista))-1] !=3:
+                return False
+            else:
+                pass
+
+
+print(threes_in_a_list(lista))
