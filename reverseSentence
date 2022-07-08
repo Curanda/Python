@@ -1,0 +1,9 @@
+def reverse_words(string):
+    string2 = string.split()
+    string3 = []
+    for word in string2:
+        string3 = [word] + string3
+    return " ".join(string3)
+
+
+print(reverse_words(input('Write a sentence to be reversed : ')))
