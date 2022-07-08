@@ -1,0 +1,6 @@
+def capitalize(string):
+    string2 = string[0].upper() + string[1].lower() + string[2].lower() + string[3].upper() + string[4:]
+    return string2
+
+
+print(capitalize(input('Write a word to be capitalized : ')))
