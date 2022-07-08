@@ -1,0 +1,6 @@
+
+def characters(string):
+    return ''.join([3*char for char in string])
+
+
+print(characters(input("Enter a word: ")))
