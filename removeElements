@@ -1,0 +1,24 @@
+
+listSize = int(input('Declare size of a list : '))
+lista = []
+for i in range(listSize):
+    element = int((input('Enter a number : ')))
+    lista.append(element)
+
+print(lista)
+
+
+def sum_69(lista):
+    if 6 and 9 in lista:
+        a = lista.index(6)
+        b = lista.index(9) + 1
+    else:
+        return sum(lista)
+
+    suma = []
+    for j in range(a, b):
+        suma.append(lista[j])
+    return sum(lista) - sum(suma)
+
+
+print(sum_69(lista))
