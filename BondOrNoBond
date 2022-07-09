@@ -1,0 +1,44 @@
+
+listSize = int(input('Declare size of a list : '))
+lista = []
+for i in range(listSize):
+    element = int((input('Enter a number : ')))
+    lista.append(element)
+
+print(lista)
+
+# This one is with a FOR loop:
+
+# def bond_(lista):
+#     a = []
+#     for i in lista:
+#         if i == 0 or i == 7:
+#             a.append(i)
+#             i += 1
+#     if a == [0, 0, 7]:
+#         return 'Bond'
+#     else:
+#         return 'no bond'
+
+# This one is with the .count() method
+
+def bond_(lista):
+    if 0 not in lista or 7 not in lista:
+        return 'No Bond'
+    else:
+        pass
+    listb = []
+    count_zero = lista.count(0)
+    count_zero2 = lista.count(7)
+    if count_zero == 2:
+        listb.append(0)
+        listb.append(0)
+        if count_zero2 == 1:
+            listb.append(7)
+            if listb == [0, 0, 7]:
+                return 'Bond'
+            else:
+                return 'No Bond'
+
+
+print(bond_(lista))
