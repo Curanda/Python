@@ -7,3 +7,9 @@ def reverse_words(string):
 
 
 print(reverse_words(input('Write a sentence to be reversed : ')))
+
+
+# def reverse_words(string):
+#     string2 = string.split()
+#     string3 = [::-1]
+#     return " ".join(string3)
