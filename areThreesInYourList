@@ -23,3 +23,11 @@ def threes_in_a_list(lista):
 
 
 print(threes_in_a_list(lista))
+
+
+
+# def threes(lista):
+#     for number in range(0, len(lista)-1):
+#         if lista[number:number+2] == [3,3]:
+#             return True
+#     return False
