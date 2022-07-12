@@ -3,4 +3,4 @@ def capitalize(string):
     return string2
 
 
-print(capitalize(input('Write a word to be capitalized : ')))
+print(capitalize(input('Write a name to have 1st & 4th letter capitalized : ')))
