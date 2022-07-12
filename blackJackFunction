@@ -1,10 +1,10 @@
 
 def sum_21(n1, n2, n3):
-    if ((n1 + n2 + n3) <= 21):
-        return n1 + n2 + n3
-    elif ((n1 + n2 + n3) > 21) and ((n1 == 11) or (n2 == 11) or (n3 == 11)):
-        if ((n1 + n2 + n3) - 11) <= 21:
-            return (n1 + n2 + n3) - 11
+    if (sum([n1, n2, n3]) <= 21):
+        return sum([n1, n2, n3])
+    elif (sum([n1, n2, n3]) > 21) and ((n1 == 11) or (n2 == 11) or (n3 == 11)):
+        if (sum([n1, n2, n3]) - 11) <= 21:
+            return sum([n1, n2, n3]) - 11
         else:
             return "bust"
     else:
