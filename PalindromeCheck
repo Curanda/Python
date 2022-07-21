@@ -1,0 +1,16 @@
+# It checks whether a provided string is a palindrome or not.
+
+import string
+
+
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    if sorted(set(str1.replace(" ", "").lower())) == sorted(set(alphabet)):
+        print('palindrome')
+    else:
+        print('not a palindrome')
+
+
+string.ascii_lowercase
+'abcdefghijklmnopqrstuvwxyz'
+
+ispangram(input("Write a sentece: "))
