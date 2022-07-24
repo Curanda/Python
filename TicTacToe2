@@ -1,0 +1,131 @@
+# Tic Tac Toe nr 2
+
+
+def kik():
+    print("Here's a grid for tic tac toe. \n Two players can enter position after one another.")
+    print('   1    |    2    |    3   ')
+    print('---------------------------')
+    print('   4    |    5    |    6   ')
+    print('---------------------------')
+    print('   7    |    8    |    9   ')
+
+    grid = {1: '       ', 2: '       ', 3: '       ', 4: '       ', 5: '       ', 6: '       ', 7: '       ',
+            8: '       ', 9: '       '}
+
+    for i in range(0, 4):
+        grid[int(input("Declare the position of X : "))] = '   X   '
+
+        print(f'{grid[1]}|{grid[2]}|{grid[3]}')
+        print('-----------------------')
+        print(f'{grid[4]}|{grid[5]}|{grid[6]}')
+        print('-----------------------')
+        print(f'{grid[7]}|{grid[8]}|{grid[9]}')
+
+        if (grid[1] and grid[2] and grid[3]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[1] and grid[2] and grid[3]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[4] and grid[5] and grid[6]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[4] and grid[5] and grid[6]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[7] and grid[8] and grid[9]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[7] and grid[8] and grid[9]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[2] and grid[5] and grid[8]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[2] and grid[5] and grid[8]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[3] and grid[6] and grid[9]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[3] and grid[6] and grid[9]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[3] and grid[5] and grid[7]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[3] and grid[5] and grid[7]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[1] and grid[5] and grid[9]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[1] and grid[5] and grid[9]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[1] and grid[4] and grid[7]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[1] and grid[4] and grid[7]) == '   O   ':
+            print('O won')
+            break
+
+        grid[int(input("Declare the position of O : "))] = '   O   '
+
+        print(f'{grid[1]}|{grid[2]}|{grid[3]}')
+        print('-----------------------')
+        print(f'{grid[4]}|{grid[5]}|{grid[6]}')
+        print('-----------------------')
+        print(f'{grid[7]}|{grid[8]}|{grid[9]}')
+
+        if (grid[1] and grid[2] and grid[3]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[1] and grid[2] and grid[3]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[4] and grid[5] and grid[6]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[4] and grid[5] and grid[6]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[7] and grid[8] and grid[9]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[7] and grid[8] and grid[9]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[2] and grid[5] and grid[8]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[2] and grid[5] and grid[8]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[3] and grid[6] and grid[9]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[3] and grid[6] and grid[9]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[3] and grid[5] and grid[7]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[3] and grid[5] and grid[7]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[1] and grid[5] and grid[9]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[1] and grid[5] and grid[9]) == '   O   ':
+            print('O won')
+            break
+        elif (grid[1] and grid[4] and grid[7]) == '   X   ':
+            print('X won')
+            break
+        elif (grid[1] and grid[4] and grid[7]) == '   O   ':
+            print('O won')
+            break
+            
+           
+kik()
