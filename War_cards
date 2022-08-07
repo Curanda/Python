@@ -1,0 +1,79 @@
+import random
+from random import sample
+
+karty = {
+    "pik":[2,3,4,5,6,7,8,9,10,11,12,13,14],
+    "kier":[2,3,4,5,6,7,8,9,10,11,12,13,14],
+    "karo":[2,3,4,5,6,7,8,9,10,11,12,13,14],
+    "trefl":[2,3,4,5,6,7,8,9,10,11,12,13,14]
+}
+
+
+
+# talia3 = list(karty.values())
+
+
+talia = []
+talia1 = []
+talia2 = []
+potasowana = []
+
+def zrob_talie():
+    for key in karty:
+        for value in karty[key]:
+            talia.append(str(value) + " " + key)
+    return talia
+
+
+def potasuj():
+    zrob_talie()
+    potasowana = random.sample(talia, 52)
+    for karta in potasowana[1:26]:
+        talia1.append(karta)
+    for karta in potasowana[27:52]:
+        talia2.append(karta)
+    print(talia1, talia2)
+    return potasowana, talia1, talia2
+
+
+potasuj()
+talia3 = []
+talia4 = []
+
+#
+# def cyfruj_talie():
+#     for karta in talia1:
+#         talia3.append(int(karta[0]))
+#     for karta in talia2:
+#         talia4.append(int(karta[0]))
+#     print(talia3, talia4)
+#     return talia3, talia4
+
+def cyfruj_talie():
+    for karta in talia1:
+        if int in karta:
+            karta =
+
+
+cyfruj_talie()
+
+
+
+def wojna():
+
+
+    pass
+
+
+def gra():
+    for i in range(0, len(talia3)):
+        print(talia3,talia4)
+        if talia3[i] > talia4[i]:
+            talia3.append(talia4[i]) and talia4.pop(i)
+        elif talia4[i] > talia3[i]:
+            talia4.append(talia3[i]) and talia3.pop(i)
+        else:
+            wojna()
+
+gra()
+# print(gra())
