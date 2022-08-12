@@ -9,14 +9,11 @@ karty = {
 }
 
 
-
-# talia3 = list(karty.values())
-
-
 talia = []
 talia1 = []
 talia2 = []
 potasowana = []
+
 
 def zrob_talie():
     for key in karty:
@@ -32,7 +29,6 @@ def potasuj():
         talia1.append(karta)
     for karta in potasowana[27:52]:
         talia2.append(karta)
-    print(talia1, talia2)
     return potasowana, talia1, talia2
 
 
@@ -40,40 +36,48 @@ potasuj()
 talia3 = []
 talia4 = []
 
-#
-# def cyfruj_talie():
-#     for karta in talia1:
-#         talia3.append(int(karta[0]))
-#     for karta in talia2:
-#         talia4.append(int(karta[0]))
-#     print(talia3, talia4)
-#     return talia3, talia4
-
-def cyfruj_talie():
-    for karta in talia1:
-        if int in karta:
-            karta =
-
-
-cyfruj_talie()
-
-
-
-def wojna():
-
-
-    pass
-
 
 def gra():
-    for i in range(0, len(talia3)):
-        print(talia3,talia4)
-        if talia3[i] > talia4[i]:
-            talia3.append(talia4[i]) and talia4.pop(i)
-        elif talia4[i] > talia3[i]:
-            talia4.append(talia3[i]) and talia3.pop(i)
+    for i in range(0, len(talia1)):
+        # print(talia1,talia2)
+        talia1Cyfry = int(talia1[i][0]+talia1[i][1])
+        talia2Cyfry = int(talia2[i][0]+talia2[i][1])
+        talia1CyfryWojna = int(talia1[i+2][0]+talia1[i+2][1])
+        talia2CyfryWojna = int(talia2[i+2][0]+talia2[i+2][1])
+        if talia1Cyfry > talia2Cyfry:
+            talia2.remove(talia2[i])
+            talia1.append(talia2[i])
+            print(f"{talia1[i]} against {talia2[i]}. Deck One takes a card {talia2[i]} from Deck Two")
+            print(talia1)
+            print(talia2)
+        elif talia2Cyfry > talia1Cyfry:
+            talia1.remove(talia1[i])
+            talia2.append(talia1[i])
+            print(f"{talia1[i]} against {talia2[i]}. Deck Two takes a card {talia1[i]} from Deck One")
+            print(talia1)
+            print(talia2)
+        elif len(talia1) == 0:
+            print("Deck Two wins")
+        elif len(talia2) == 0:
+            print("Deck One wins")
         else:
-            wojna()
+            print(f"War : {talia1[i]} against {talia2[i]}")
+            if talia1CyfryWojna > talia2CyfryWojna:
+                talia1.append(talia2[i+1])
+                talia1.append(talia2[i+2])
+                talia2.remove(talia2[i+1])
+                talia2.remove(talia2[i+2])
+                print(f"Wartime : {talia1[i+2]} against {talia2[i+2]}. Deck One takes {talia2[i+1], talia2[i+2]} away from Deck Two")
+                print(talia1)
+            elif talia1CyfryWojna < talia2CyfryWojna:
+                talia2.append(talia1[i+1])
+                talia2.append(talia1[i+2])
+                talia1.remove(talia2[i+1])
+                talia1.remove(talia2[i+2])
+                print(f"Wartime : {talia1[i+2]} against {talia2[i+2]}. Deck Two takes {talia1[i+1], talia1[i+2]} away from Deck One")
+                print(talia1)
+            else:
+                print("War again")
+
 
 gra()
-# print(gra())
