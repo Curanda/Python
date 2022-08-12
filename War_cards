@@ -33,8 +33,6 @@ def potasuj():
 
 
 potasuj()
-talia3 = []
-talia4 = []
 
 
 def gra():
